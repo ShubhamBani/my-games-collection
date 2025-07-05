@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <title>Home</title>
+</head>
+
+<body class="bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white min-h-screen">
+
+    <nav class="sticky top-0 z-50 bg-black/20 backdrop-blur-md p-4 shadow-md hover:bg-black/30">
+        <div class="flex justify-between items-center relative z-10">
+            <h2 class="text-3xl font-bold text-blue-400 hover:text-red-400 transition duration-300 delay-150">
+            <a href="index.html">RazeScythe</a>
+            </h2>
+
+            <ul class="hidden md:flex gap-8 text-white font-medium">
+            <li><a href="index.html" class="hover:text-red-400 transition duration-300">Home</a></li>
+            <li><a href="games.html" class="hover:text-red-400 transition duration-300 text-red-400">Games</a></li>
+            <li><a href="about.html" class="hover:text-red-400 transition duration-300">About</a></li>
+            </ul>
+
+            <div id="bar" class="md:hidden cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            </div>
+        </div>
+
+        <ul id="navbar"
+            class="flex flex-col gap-6 fixed top-0 right-0 h-full w-1/2 bg-slate-900 shadow-2xl text-white p-6
+                transform translate-x-full transition-transform duration-300 ease-in-out z-50
+                backdrop-blur-xl backdrop-saturate-150 border-l border-white/10 md:hidden">
+            
+            <li><a href="index.html" class="text-red-400 transition duration-300">Home</a></li>
+            <li><a href="games.html" class="hover:text-red-400 transition duration-300">Games</a></li>
+            <li><a href="about.html" class="hover:text-red-400 transition duration-300">About</a></li>
+
+            <div id="close" class="md:hidden mt-4 text-red-400 text-lg font-bold cursor-pointer">Close ✕</div>
+        </ul>
+    </nav>
+    
+    <div id="main-content">
+        <div  class="mt-4 grid place-items-center min-h-[20vh] backdrop-blur-2xl backdrop-saturate-150 relative z-10">
+            <h1 class="animate-pulse text-6xl font-extrabold text-red-500 bg-white/10  p-5 rounded-xl shadow-xl border border-white/20 w-fit relative z-10">
+                Play Games!
+            </h1>
+        </div>
+
+        <section>
+            <div class="grid md:grid-cols-2 gap-8 p-8 sm:grid-cols-1 lg:grid-cols-2">
+
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl shadow-xl overflow-hidden hover:scale-105 transition-transform duration-300 delay-150"><a href="https://shubhambani.github.io/Tic-Tac-Toe-Game/">
+                    <img src="https://i.pinimg.com/736x/fe/81/78/fe81787b213429bee7dbcbe5b614e3da.jpg" alt="Tic Tac Toe" class="w-full h-48 object-cover transition duration-300 delay-150 hover:first:blur-md">
+                    <div class="p-4">
+                        <h3 class="text-2xl font-bold text-red-400 mb-2">Tic Tac Toe</h3>
+                        <p class="text-gray-300">
+                            A classic strategy game for two players. Try to line up your Xs or Os before your opponent does!
+                        </p>
+                        <a href="https://shubhambani.github.io/Tic-Tac-Toe-Game/" class="animate-pulse inline-block mt-4 text-red-400 hover:text-red-300 transition-colors duration-300 delay-150">Play Now →</a>
+                    </div>
+                </a></div>
+
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl shadow-xl overflow-hidden hover:scale-105 transition-transform duration-300 delay-150">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/people-playing-paper-rock-scissors-royalty-free-illustration-1583269312.jpg?crop=0.994xw:0.799xh;0.00160xw,0.195xh&resize=1200:*" alt="Rock Paper Scissors" class="w-full h-48 object-cover transition duration-300 delay-150 hover:first:blur-md">
+                    <div class="p-4">
+                        <h3 class="text-2xl font-bold text-red-400 mb-2">Rock Paper Scissors</h3>
+                        <p class="text-gray-300">
+                            The ultimate quick decision game. Rock crushes scissors, scissors cut paper, paper covers rock!
+                        </p>
+                        <a href="#" class="inline-block mt-4 text-red-400 hover:text-red-300 transition-colors duration-300 delay-150">Play Now →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="bg-black/30 backdrop-blur-sm py-3 text-center text-sm text-gray-400 relative bottom-0">
+        Made for legends using Tailwind CSS
+    </footer>
+</body>
+<script src="function.js"></script>
+<script>tailwind.config.js</script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - RazeScythe</title>
+    <link rel="stylesheet" href="src/output.css" />
+</head>
+
+<body class="bg-slate-900 text-white min-h-screen">
+    <nav class="sticky top-0 z-50 bg-black/20 backdrop-blur-md p-4 shadow-md hover:bg-black/30">
+        <div class="flex justify-between items-center relative z-10">
+            <h2 class="text-3xl font-bold text-blue-400 hover:text-red-400 transition duration-300 delay-150">
+            <a href="index.html">RazeScythe</a>
+            </h2>
+
+            <ul class="hidden md:flex gap-8 text-white font-medium">
+            <li><a href="index.html" class="hover:text-red-400 transition duration-300">Home</a></li>
+            <li><a href="games.html" class="hover:text-red-400 transition duration-300 text-red-400">Games</a></li>
+            <li><a href="about.html" class="hover:text-red-400 transition duration-300">About</a></li>
+            </ul>
+
+            <div id="bar" class="md:hidden cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            </div>
+        </div>
+
+        <ul id="navbar"
+            class="flex flex-col gap-6 fixed top-0 right-0 h-full w-1/2 bg-slate-900 shadow-2xl text-white p-6
+                transform translate-x-full transition-transform duration-300 ease-in-out z-50
+                backdrop-blur-xl backdrop-saturate-150 border-l border-white/10 md:hidden">
+            
+            <li><a href="index.html" class="hover:text-red-400 transition duration-300">Home</a></li>
+            <li><a href="games.html" class="hover:text-red-400 transition duration-300">Games</a></li>
+            <li><a href="about.html" class="text-red-400 transition duration-300">About</a></li>
+
+            <div id="close" class="md:hidden mt-4 text-red-400 text-lg font-bold cursor-pointer">Close ✕</div>
+        </ul>
+    </nav>
+    
+    <div id="main-content">
+        <div class="grid place-items-center min-h-[20vh] mt-2">
+            <h1 class="text-6xl font-extrabold text-red-500 bg-white/10 backdrop-blur-lg p-5 rounded-xl shadow-lg">
+                About Me
+            </h1>
+        </div>
+
+        <section class="max-w-4xl mx-auto px-6 py-10">
+            <div class="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-blue-400 mb-4">Hey there 👋</h2>
+                <p class="text-gray-300 text-lg mb-4">
+                    I'm Shubham, a passionate learner diving deep into the world of web development. This site, <strong>RazeScythe</strong>, is my creative lab—where I test, build, and refine everything I pick up on the way.
+                </p>
+                <p class="text-gray-300 text-lg mb-4">
+                    Right now, I'm learning and implementing skills like HTML, CSS, JavaScript, and especially <strong>Tailwind CSS</strong> to craft responsive and modern designs. Every page here reflects what I’ve explored—from sticky navigation bars to animations and card layouts.
+                </p>
+                <p class="text-gray-300 text-lg mb-4">
+                    As I grow, this site will too. My goal is to build fun interactive projects, share knowledge, and create experiences that feel intuitive and engaging.
+                </p>
+                <p class="text-gray-300 text-lg">
+                    Thanks for stopping by—and if you're learning too, keep experimenting! That’s where the real magic happens 🔥
+                </p>
+                <div class="mt-6">
+                    <a href="games.html" class="inline-block bg-red-500 hover:bg-red-400 text-white font-semibold py-2 px-4 rounded transition duration-300 delay-150 animate-bounce">
+                        See My Projects →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-black/30 backdrop-blur-sm py-3 text-center text-sm text-gray-400">
+            Made with curiosity & Tailwind CSS by Shubham
+        </footer>
+    </div>
+</body>
+<script>tailwind.config.js</script>
+<script src="function.js"></script>
+</html>
